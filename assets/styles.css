@@ -1,10 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --primary-color: #5E4EB4;
     --secondary-color: #E3CDF4;
     --secondary-02-color: #F9B234;
+    --font-family-primary: 'Inter', sans-serif;
     --font-family: 'JetBrains Mono', monospace;
     --font-size: 16px;
 }
@@ -19,13 +22,11 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 0 20px;
-    max-width: 1200px;
 }
 
 .logo {
     font-size: 1.5rem;
 }
-
 
 header {
     display: flex;
