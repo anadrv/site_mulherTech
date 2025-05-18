@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
@@ -18,28 +16,44 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 20px;
+html {
+    scroll-behavior: smooth;
 }
 
-.logo {
-    font-size: 1.5rem;
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: var(--font-family-primary);
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    padding: 20px;
-    margin: 10px auto;
     font-family: var(--font-family);
     color: var(--primary-color);
-    max-width: 75%;
+
 }
 
+header.container {
+    
+    padding: 30px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+/* Navegação */
 .nav {
     text-decoration: none;
     padding: 0.8em 1em;
@@ -49,6 +63,40 @@ header {
 .nav:hover {
     background-color: var(--secondary-02-color);
     color: white;
-    padding: 2px 1.2em;
+    padding: 2px 1em;
     border-radius: 5px;
+}
+
+/* Seção about com fundo colorido que ocupa 100% */
+.about {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 0;
+    height: 70vh;
+
+}
+
+/* Seção inicial (hero ou destaque) */
+.front-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: justify;
+    height: 60vh;
+}
+
+/* Texto da seção inicial */
+.text {
+    width: 30%;
+    max-width: 563px;
+    margin-left: 10%;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+.front-image img{
+    width: 90%;
+    height: auto;
 }
