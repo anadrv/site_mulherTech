@@ -33,16 +33,16 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    margin-left: 30px;
     padding: 20px;
     margin: 10px auto;
     font-family: var(--font-family);
     color: var(--primary-color);
+    max-width: 75%;
 }
 
 .nav {
     text-decoration: none;
-    padding: 0.8em 1.2em;
+    padding: 0.8em 1em;
     display: inline-block;
 }
 
