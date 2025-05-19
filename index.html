@@ -5,69 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mulher Tech</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-
     <div id="header-placeholder"></div>
 
-
     <main>
-
       <section class="about">
-          <div class="front-container container">
-            <div class="text">
-              <h2 class="title">
-                Uma plataforma feita por e para mulheres na tecnologia.
-              </h2>
-              <p>
-                Aqui, você encontra acolhimento, apoio e representatividade. Nosso
-                objetivo é dar visibilidade às trajetórias femininas na área de TI e
-                fortalecer quem faz parte desse universo — enfrentando a evasão com
-                informação, inspiração e ação.
-              </p>
-            </div>
-            <div class="front-image">
-              <img
-                src="./assets/images/image-front-page.png"
-                alt="Mulher Tech"
-                class="image"
-              />
-            </div>
+        <div class="front-container container">
+          <div class="text">
+            <h2 class="title">
+              Uma plataforma feita por e para mulheres na tecnologia.
+            </h2>
+            <p>
+              Aqui, você encontra acolhimento, apoio e representatividade. Nosso
+              objetivo é dar visibilidade às trajetórias femininas na área de TI
+              e fortalecer quem faz parte desse universo — enfrentando a evasão
+              com informação, inspiração e ação.
+            </p>
           </div>
+          <div class="front-image">
+            <img
+              src="./assets/images/image-front-page.png"
+              alt="Mulher Tech"
+              class="image"
+            />
+          </div>
+        </div>
       </section>
       <section class="events container">
         <div class="events-workshops">
-            <h2>Eventos e Workshops</h2>
-            <div class="date-description">
-                <div class="date">
-                    <h3>01</h3>
-                    <p>abril</p>
-                </div>
-                <div class="description">
-                    <p><strong>Café Colaborativo</strong> - encontro para conversa e acolhimento das novas integrantes na área de TI da faculdade.  </p>
-                </div>
+          <h2>Eventos e Workshops</h2>
+          <div class="date-description">
+            <div class="date">
+              <h3>01</h3>
+              <p>abril</p>
             </div>
+            <div class="description">
+              <p>
+                <strong>Café Colaborativo</strong> - encontro para conversa e
+                acolhimento das novas integrantes na área de TI da faculdade.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="event-image">
-            <img
-                src="/assets/images/event-image.png"
-                alt="Eventos e Workshops"
-                class="event-img"
-            />
-            <img src="/assets/images/seta.png" alt="" class="seta"/>
+          <img
+            src="/assets/images/event-image.png"
+            alt="Eventos e Workshops"
+            class="event-img"
+          />
+          <img src="/assets/images/seta.png" alt="" class="seta" />
         </div>
       </section>
       <section class="podcast">
-            <div class="podcast-info-covers container">
-                <div><h2>Podcast</h2></div>
-                <div class="covers">
-                    <img src="/assets/images/cover-podcast.png" alt="" class="cover-podcast"onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"/><img src="/assets/images/cover-podcast.png" alt="" class="cover-podcast"onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"/>
-                    <img src="/assets/images/cover-podcast.png" alt="" class="cover-podcast"onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"/>
-                </div>
+        <div class="podcast-info-covers container">
+          <div><h2>Podcast</h2></div>
+          <div class="covers">
+            <div class="image-container">
+              <img
+                src="/assets/images/cover-podcast.png"
+                alt=""
+                class="cover-podcast"
+                onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"
+              />
+              <button
+                class="btn-overlay"
+                onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"
+              >
+                Clique aqui
+              </button>
             </div>
+
+            <div class="image-container">
+              <img
+                src="/assets/images/cover-podcast.png"
+                alt=""
+                class="cover-podcast"
+                onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"
+              />
+              <button
+                class="btn-overlay"
+                onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"
+              >
+                Clique aqui
+              </button>
+            </div>
+
+            <div class="image-container">
+              <img
+                src="/assets/images/cover-podcast.png"
+                alt=""
+                class="cover-podcast"
+                onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')"
+              />
+              <button class="btn-overlay" aria-label="Play" onclick="abrirLink('https://www.youtube.com/watch?v=abbR-Ttd-cA&ab_channel=MontereyBayAquarium')">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
-
+      <section class="depoiments-container">
+        <div class="depoiments container">
+            <h2>Depoimentos</h2>
+        </div>
+      </section>
+      <section class="phrase container">
+        <h3>a força feminina é o código da mudança</h3>
+      </section>
+      <section class="studies"></section>
+      <div class="image-container"></div>
     </main>
     <script src="./assets/script.js"></script>
   </body>
