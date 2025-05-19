@@ -67,16 +67,13 @@ header.container {
     border-radius: 5px;
 }
 
-/* Seção about com fundo colorido que ocupa 100% */
 .about {
     background-color: var(--secondary-color);
     width: 100%;
     padding: 0;
     height: 70vh;
-
 }
 
-/* Seção inicial (hero ou destaque) */
 .front-container {
     display: flex;
     align-items: flex-end;
@@ -85,7 +82,7 @@ header.container {
     height: 60vh;
 }
 
-/* Texto da seção inicial */
+
 .text {
     width: 30%;
     max-width: 563px;
@@ -99,4 +96,78 @@ header.container {
 .front-image img{
     width: 90%;
     height: auto;
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: justify;
+    height: 60vh;
+    margin-bottom: 100px;
+}
+
+.events-workshops {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 30%;
+    max-width: 563px;
+    
+    
+
+}
+
+
+.event-image {
+    display: flex;
+    align-items: center;
+    
+}
+
+.event-img {
+    width: 60%;
+    margin-right: 50px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.232);
+    border-radius: 10px;
+}
+
+.seta {
+    width: 7%;
+
+}
+
+.date-description {
+    display: flex;
+    align-items: stretch; 
+    margin-top: 70px;
+    color: #121212;
+    
+}
+
+.date, .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.date {
+    margin-right: 25px;
+    text-align: center;
+
+}
+
+.date h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1;
+    color: var(--secondary-02-color);
+}
+
+/* Texto "abril" menor */
+.date p {
+    font-size: 1.2rem;
+    margin: 0;
 }
