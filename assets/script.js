@@ -4,3 +4,7 @@ fetch('/pages/header.html')
     document.getElementById('header-placeholder').innerHTML = data;
   })
   .catch(error => console.error('Erro ao carregar o header:', error));
+
+function abrirLink(url) {
+    window.open(url, "_blank");
+  }
