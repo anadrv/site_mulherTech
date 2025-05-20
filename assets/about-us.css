@@ -1,15 +1,24 @@
 .info {
-    background-color: aqua;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 50px 0;
+
+
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    color: var(--secondary-02-color);
+    padding-left: 20%;
 
 }
 
 .info p {
     width: 30%;
     text-align: justify;
+
+    
 
 }
 
@@ -52,7 +61,6 @@
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-
   margin-bottom: 50px;
 }
 
@@ -66,17 +74,15 @@
   font-size: 1.2rem;
 }
 
-.web {
 
-    background-color: bisque;
-}
 
 .card {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border-radius: 10px;
-  box-shadow: var(--shadow-default);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   text-align: start;
-  min-height: 330px;
+  min-height: 310px;
+  letter-spacing: 1.5px;
   
 }
 
@@ -88,10 +94,11 @@
 
 .info-card {
 
-    margin: 5px 0 0 10px;
+    margin: 13px 0 0 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .info-card img {
@@ -103,6 +110,12 @@ h2 {
     font-size: 1rem;
 }
 
+.card1, .card3, .card5, .card7 {
+  background-color: var(--primary-color);
+  color: white;
+
+}
+
 .icons {
     display: flex;
     justify-content: end;
@@ -112,18 +125,29 @@ h2 {
 
 @media (max-width: 768px) {
 
+  .info {
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 20px;
+    width: 100%;
+    background-color: aqua;
+  }
+
+  .info p {
+    margin: 40px 0px;
+    width: 50%;
+  }
 
   .linha1,
   .linha2 {
     grid-template-columns: 1fr; 
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 
   }
 .card {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-    min-height: 350px;
+    min-height: 250px;
 }
   .grupo-linha {
     flex-direction: column; 
@@ -135,6 +159,17 @@ h2 {
     transform: none;
     margin: 10px 0;
     text-align: center;
+  }
+
+  .info-card {
+    margin: 10px;
+
+
+  }
+
+  .icons {
+    margin: 0px;
+
   }
 
   .card7 {
