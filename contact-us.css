@@ -1,0 +1,55 @@
+.contact-us {
+
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+.contact-info {
+  background-color: var(--primary-color);
+  width: 60%;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding: 0 0 70px 70px;
+  border-radius: 0 5px 5px 0px;
+  margin-top: 100px;
+  font-size: 0.9rem;
+
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+  padding-right: 50px;
+  font-size: 0.8rem;
+}
+
+.icons span {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+.icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.icons img {
+  width: 20%;
+}
+
+.image {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding-right: 10%
+
+}
+
