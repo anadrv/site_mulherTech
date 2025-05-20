@@ -1,38 +1,30 @@
 .info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px 0;
-
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .info h1 {
-    font-size: 1.5rem;
-    color: var(--secondary-02-color);
-    padding-left: 20%;
-
+  font-size: 1.5rem;
+  color: var(--secondary-02-color);
+  padding-left: 20%;
 }
 
 .info p {
-    width: 30%;
-    text-align: justify;
-
-    
-
+  width: 30%;
+  text-align: justify;
 }
-
 
 .cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  
 }
 
 .grupo-linha {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -42,7 +34,6 @@
 .linha2 {
   display: grid;
   gap: 20px;
-
 }
 
 .linha1 {
@@ -50,9 +41,8 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   width: 100%;
-  max-width: 900px; 
+  max-width: 900px;
   margin-left: 10%;
-
 }
 
 .linha2 {
@@ -74,8 +64,6 @@
   font-size: 1.2rem;
 }
 
-
-
 .card {
   background-color: var(--secondary-color);
   border-radius: 10px;
@@ -83,7 +71,6 @@
   text-align: start;
   min-height: 310px;
   letter-spacing: 1.5px;
-  
 }
 
 .card img {
@@ -93,64 +80,65 @@
 }
 
 .info-card {
-
-    margin: 13px 0 0 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
+  margin: 13px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .info-card img {
-    width: 25px;
+  width: 25px;
 }
 
 h2 {
-    font-family: var(--font-family);
-    font-size: 1rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
 }
 
-.card1, .card3, .card5, .card7 {
+.card1,
+.card3,
+.card5,
+.card7 {
   background-color: var(--primary-color);
   color: white;
-
 }
 
 .icons {
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
-    gap: 10px;
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  gap: 10px;
 }
 
 @media (max-width: 768px) {
-
   .info {
     flex-direction: column;
     margin: 10px 0;
-    gap: 20px;
     width: 100%;
-    background-color: aqua;
   }
 
   .info p {
-    margin: 40px 0px;
-    width: 50%;
+    margin: 30px 0px;
+    width: 90%;
+  }
+
+  .info h1 {
+    padding-left:0;
+  
   }
 
   .linha1,
   .linha2 {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     margin: 0 auto;
     width: 90%;
     margin: 0 auto;
-
   }
-.card {
+  .card {
     min-height: 250px;
-}
+  }
   .grupo-linha {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -161,15 +149,16 @@ h2 {
     text-align: center;
   }
 
+.web {
+  order: -1;
+}
+
   .info-card {
     margin: 10px;
-
-
   }
 
   .icons {
     margin: 0px;
-
   }
 
   .card7 {
