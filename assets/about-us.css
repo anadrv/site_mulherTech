@@ -1,0 +1,143 @@
+.info {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+.info p {
+    width: 30%;
+    text-align: justify;
+
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.grupo-linha {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linha1,
+.linha2 {
+  display: grid;
+  gap: 20px;
+
+}
+
+.linha1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px; 
+  margin-left: 10%;
+
+}
+
+.linha2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+
+  margin-bottom: 50px;
+}
+
+.rotulo {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: var(--secondary-02-color);
+  font-size: 1.2rem;
+}
+
+.web {
+
+    background-color: bisque;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--shadow-default);
+  text-align: start;
+  min-height: 330px;
+  
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1px 10px 0px 0px;
+}
+
+.info-card {
+
+    margin: 5px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-card img {
+    width: 25px;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+
+  .linha1,
+  .linha2 {
+    grid-template-columns: 1fr; 
+    margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
+
+  }
+.card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    min-height: 350px;
+}
+  .grupo-linha {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .rotulo {
+    writing-mode: horizontal-tb;
+    transform: none;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .card7 {
+    margin-bottom: 50px;
+  }
+}
