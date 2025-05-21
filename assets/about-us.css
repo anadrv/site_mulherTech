@@ -14,6 +14,9 @@
 .info p {
   width: 30%;
   text-align: justify;
+  background-color: var(--secondary-03-color);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .cards {
