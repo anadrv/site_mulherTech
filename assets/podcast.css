@@ -1,0 +1,44 @@
+.info-podcast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info-pod {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 45%;
+    gap: 50px;
+}
+
+.info-pod h1 {
+    color: var(--secondary-02-color);
+}
+
+.info-pod p {
+    background-color: var(--secondary-03-color);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; 
+  gap: 15px; 
+  padding: 30px;
+  background-color: aquamarine;
+
+}
+
+.card-info {
+  width: 25%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
