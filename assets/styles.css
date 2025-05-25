@@ -29,7 +29,7 @@ body {
   text-align: center;
   font-family: var(--font-family-primary);
   color: var(--primary-color);
-   opacity: 0;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -72,6 +72,7 @@ header.container {
   padding: 2px 1em;
   border-radius: 5px;
 }
+
 
 .about {
   background-color: var(--secondary-color);
@@ -244,3 +245,67 @@ header.container {
     margin-top: 70px;
     margin-bottom: 70px;
 }
+
+#footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.mobile-nav {
+  background-color: var(--primary-color);
+  position: relative;
+  color: white;
+  font-family: var(--font-family);
+  padding: 15px 0px;
+
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 30px 0px;
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .mobile-nav {
+    display: none; 
+  }
+}
+
+@media (max-width: 599px) {
+  header.container {
+    display: none;
+  }
+}
+

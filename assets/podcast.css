@@ -92,10 +92,3 @@
     font-weight: bold;
 }
 
-footer {
-    margin-top: 25px;
-    background-color: var(--secondary-color);
-    padding: 15px;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
