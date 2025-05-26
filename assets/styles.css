@@ -420,6 +420,57 @@ header.container {
   padding-right: 36px;
 }
 
+.about-project {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  height: 50vh;
+}
+
+.about-project-container {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+
+.image-project {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: start;
+}
+
+.text-project {
+  max-width: 700px;
+  text-align: justify;
+  padding: 0 40px;
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 70px;
+  font-size: 2rem;
+}
+
+.research h4{
+  text-align: right;
+}
+
+.research a {
+  
+  text-decoration: none;
+  color: white;
+  background-color: var(--secondary-02-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 15% 70%;
+
+}
+
 @media (min-width: 600px) {
   .mobile-nav {
     display: none; 
