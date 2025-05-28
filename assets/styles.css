@@ -461,7 +461,7 @@ header.container {
 .research {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   gap: 10px;
   max-width: 70px;
   font-size: 2rem;
@@ -490,6 +490,12 @@ header.container {
 }
 
 /*Linha do tempo do projeto*/
+
+
+.time-line-title {
+  margin-top: 100px;
+}
+
 
 .time-line-info {
   display: flex;
