@@ -67,7 +67,7 @@ const events = [
     month: "maio",
     title: "Workshop Front-end",
     desc: "Oficina prática de HTML, CSS e JS voltada para iniciantes.",
-    img: "/assets/images/junhan.png"
+    img: "/assets/images/podcast.jpg"
   },
   {
     date: "30",
