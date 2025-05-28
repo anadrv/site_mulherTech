@@ -1,5 +1,6 @@
 .next-events {
     background-color: var(--secondary-color);
+    padding: 0px 40px; 
 
 }
 
@@ -61,8 +62,11 @@
 
 .all-events {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 40px; 
 }
 
 
@@ -99,6 +103,7 @@
 .all-events-info .date {
   font-weight: bold;
   color: var(--primary-color);
+  font-family: var(--font-family);
   text-align: start;
 }
 
@@ -112,3 +117,123 @@
   margin-bottom: 0.5rem;
   color: black;
 }
+
+@media (max-width: 599px) {
+  .event-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .events-title {
+    text-align: center;
+    align-self: center;
+  }
+
+  .coderosa {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .info-container {
+    align-items: center;
+    gap: 0; 
+  }
+
+  .events-info {
+    max-width: 90%;
+    text-align: center;
+    margin-top: -40px;
+  }
+
+  .date-description {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .next-page {
+    display: none;
+  }
+
+  .next-page img {
+    margin: 0 10px;
+  }
+
+  .all-events {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .next-events {
+    background-color: var(--secondary-color);
+  }
+
+  .event-container {
+    padding: 40px; 
+    gap: 30px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px; 
+    max-width: 350px; 
+  }
+
+  .events-title {
+    align-self: flex-start;
+    text-align: justify;
+  }
+
+  .events-info {
+    max-width: 450px; 
+    text-align: justify;
+  }
+
+  .date-description {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .coderosa {
+    width: 100%;
+    margin-left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.29);
+    border-radius: 15px;
+  }
+
+  .next-page img {
+    max-width: 30px;
+    margin: 5px 15px;
+  }
+
+  .all-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 80%;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 40px; 
+  }
+
+  .all-events-infos {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+}
+
