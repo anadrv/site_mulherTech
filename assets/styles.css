@@ -62,15 +62,17 @@ header.container {
 
 .nav {
   text-decoration: none;
-  padding: 0.8em 1em;
+  padding: 2px 12px;
   display: inline-block;
+  transition: all 0.3s ease;
+
 }
 
 .nav:hover, nav a.active {
   background-color: var(--secondary-02-color);
   color: white;
-  padding: 2px 1em;
   border-radius: 5px;
+
 }
 
 
@@ -424,7 +426,7 @@ header.container {
   width: 100%;
   background-color: var(--primary-color);
   color: white;
-  height: 50vh;
+  height: 75vh;
 }
 
 .about-project-container {
@@ -461,14 +463,23 @@ header.container {
 }
 
 .research a {
-  
   text-decoration: none;
   color: white;
   background-color: var(--secondary-02-color);
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 1rem;
-  padding: 15% 70%;
+  padding: 10% 25%;
+  white-space: nowrap; 
+  display: inline-block; 
+  text-align: center;
+  transition: all 0.3s ease;
+}
 
+.research a:hover {
+  color: white;
+  background-color: var(--color-text-dark);
+
+ 
 }
 
 @media (min-width: 600px) {
