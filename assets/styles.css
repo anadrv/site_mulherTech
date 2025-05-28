@@ -498,19 +498,21 @@ header.container {
 
 
 .time-line-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 0;
+  justify-items: center;
   text-align: justify;
   color: #121212;
   margin: 100px 0;;
 
 } 
 
-.line-01, .line-02 {
+.line-01, .line-02{
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 100%;
   max-width: 450px;
 }
 
@@ -534,12 +536,18 @@ header.container {
 }
 
 .time-line-detail {
+  display: flex;               
+  justify-content: center;    
+  align-items: center;     
+  text-align: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  font-family: var(--font-family);
   background-color: var(--secondary-02-color);
   flex-shrink: 0;
-
+  color: white;
+         
 }
 
 
