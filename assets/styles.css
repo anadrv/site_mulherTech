@@ -231,7 +231,7 @@ header.container {
   transform: translate(-50%, -50%);
   opacity: 0;
   padding: 10px 20px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-02-color);
   color: white;
   font-family: var(--font-family-primary);
   font-size: 1rem;
@@ -239,6 +239,7 @@ header.container {
   border-radius: 10px;
   transition: opacity 0.3s ease;
   pointer-events: none;
+  cursor: pointer;
 }
 
 .image-container:hover .btn-overlay {
@@ -549,8 +550,6 @@ header.container {
   color: white;
          
 }
-
-
 
 
 
