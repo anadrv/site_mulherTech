@@ -251,11 +251,16 @@ header.container {
 
 .statements-container {
   margin: 60px 0;
+  display: flex;
+  align-items: center;
 }
 
-.statements h2 {
+.title-statement {
   color: var(--secondary-02-color);
+  font-size: 2rem;
+
 }
+
 
 .statements-grid {
   display: grid;
@@ -264,9 +269,10 @@ header.container {
   margin-top: 70px;
   justify-items: center;
   align-items: stretch;
+  margin: 50px 90px;
 }
 
-.statemnt {
+.statement {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,11 +280,23 @@ header.container {
   text-align: justify;
   gap: 15px;
   padding: 28px;
-  border: 1px solid black;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.096);
   border-radius: 14px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+
 }
 
-.statements
+.statement:hover {
+  transform: translateY(-2px);
+}
+
+.person-name {
+  font-family: var(--font-family);
+  font-weight: bold;
+}
 
 
 
