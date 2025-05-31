@@ -271,5 +271,92 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  
+  body {
+    overflow-x: hidden;
+
+}
+  .who-started {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .who-started-text {
+    max-width:70%;
+  }
+
+  .project-img-mobile{
+    display: block;
+}
+
+  .project-img{
+    display: none;
+}
+.project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    gap: 20px;
+
+}
+
+.solution {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.solution-text {
+    max-width: 90%;
+}
+
+.solution-img {
+    display: none;
+}
+
+.project-img-mobile.acc,
+.solution-img-mobile {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+}
+
+.project-text,
+.solution-text,
+.development-text {
+  max-width: 90%;
+  text-align: justify;
+}
+
+.solution-img-mobile {
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.extend-summary-text-img {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .extend-summary-text-only h2 {
+    margin-top: 50px;
+  }
+
+  .statistics {
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .extend-summary-text-img img {
+    max-width: 80%;
+    height: auto;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+
 }
