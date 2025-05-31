@@ -75,6 +75,53 @@ header.container {
 
 }
 
+/*NAV*/
+
+.mobile-nav {
+  background-color: var(--primary-color);
+  position: relative;
+  color: white;
+  font-family: var(--font-family);
+  padding: 15px 0px;
+
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 30px 0px;
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+/*SOBRE O PROJETO*/
 
 .about {
   background-color: var(--secondary-color);
@@ -106,6 +153,8 @@ header.container {
   width: 90%;
   height: auto;
 }
+
+/*EVENTOS*/
 
 .events {
   display: flex;
@@ -315,50 +364,7 @@ header.container {
     font-weight: bold;
 }
 
-.mobile-nav {
-  background-color: var(--primary-color);
-  position: relative;
-  color: white;
-  font-family: var(--font-family);
-  padding: 15px 0px;
-  margin-bottom: 70px;
 
-}
-
-.mobile-nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 15px;
-
-}
-
-.menu-toggle {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-.mobile-menu {
-  list-style: none;
-  padding: 30px 0px;
-  margin-top: 10px;
-  display: none;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.mobile-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.mobile-menu.show {
-  display: flex;
-}
 
 /*Para estudos*/
 
