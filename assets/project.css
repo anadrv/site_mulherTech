@@ -53,6 +53,8 @@ main {
     object-fit: cover; 
 }
 
+/*DESENVOLVIMENTO*/
+
 .development {
     width: 100%;
     height: auto;
@@ -73,6 +75,8 @@ main {
     margin-bottom: 50px;
 
 }
+
+/*SOLUCAO*/
 
 .solution {
     display: flex;
@@ -99,4 +103,69 @@ main {
 .solution img{
     border-radius: 20px;
     border:2px solid var(--secondary-color);
+}
+
+/*RESUMO EXPANDIDO*/
+
+.extend-summary {
+    background-color: var(--secondary-03-color);
+}
+
+.extend-summary-text-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.extend-summary-text-only h2 {
+    margin: 100px 0px 50px 0px;
+
+}
+
+.extend-summary-text-only p {
+    text-align: justify;
+    text-indent: 1rem;
+
+}
+
+.extend-summary-text-img img {
+    max-width: 30%;
+}
+
+.download {
+  display: inline-block;
+  margin-bottom: 40px;
+  background-color: var(--primary-color); 
+  color: white;
+  font-size: 0.9rem;
+  padding: 8px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download:hover {
+  background-color: var(--secondary-02-color); /
+}
+
+.statistics {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    text-align: justify;
+    gap: 20px;
+}
+
+.statistic {
+    max-width: 150px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.statistic h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: var(--secondary-02-color);
 }
