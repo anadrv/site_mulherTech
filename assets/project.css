@@ -26,6 +26,10 @@ main {
     align-self: flex-end;
 }
 
+.project-img-mobile{
+    display: none;
+}
+
 .project {
     display: flex;
     align-items: stretch; 
@@ -105,6 +109,10 @@ main {
     border:2px solid var(--secondary-color);
 }
 
+.solution-img-mobile {
+    display: none;
+}
+
 /*RESUMO EXPANDIDO*/
 
 .extend-summary {
@@ -168,4 +176,100 @@ main {
     font-size: 1.3rem;
     margin-bottom: 5px;
     color: var(--secondary-02-color);
+}
+
+/*MEDIA QUERIES*/ 
+
+@media (max-width: 600px) {
+
+body {
+    overflow-x: hidden;
+}
+  .who-started {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .who-started-text {
+    max-width: 90%;
+  }
+
+  .project-img-mobile{
+    display: block;
+}
+
+  .project-img{
+    display: none;
+}
+.project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    gap: 20px;
+
+}
+
+.project-text {
+    max-width: 90%;
+    
+}
+  .project-img-mobile.acc{
+    max-width: 400px;
+}
+
+.development-text {
+    max-width: 90%;
+}
+
+.solution {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.solution-text {
+    max-width: 90%;
+}
+
+.solution-img {
+    display: none;
+}
+
+.solution-img-mobile {
+    margin-top: 50px;
+    max-width: 100%;
+    display: block;
+}
+
+.extend-summary-text-img {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .extend-summary-text-only h2 {
+    margin-top: 50px;
+  }
+
+  .statistics {
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .extend-summary-text-img img {
+    max-width: 80%;
+    height: auto;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  
 }
