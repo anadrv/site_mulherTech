@@ -56,8 +56,8 @@ function destacarLinkAtivo() {
 
 const events = [
   {
-    date: "01",
-    month: "abril",
+    date: "06",
+    month: "nov",
     title: "Café Colaborativo",
     desc: "Encontro para conversa e acolhimento das novas integrantes na área de TI da faculdade.",
     img: "/assets/images/event-image.png"

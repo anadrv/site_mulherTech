@@ -229,6 +229,8 @@ header.container {
   margin: 0;
 }
 
+/*PODCAST*/
+
 .podcast {
   width: 100%;
   padding: 30px 20px;
@@ -311,7 +313,6 @@ header.container {
 
 }
 
-
 .statements-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -366,7 +367,7 @@ header.container {
 
 
 
-/*Para estudos*/
+/*PARA ESTUDOS*/
 
 .studies {
   padding: 4rem 2rem;
@@ -460,7 +461,7 @@ header.container {
   background-color: var(--secondary-02-color);
 }
 
-/*about us*/
+/*QUEM SOMOS*/
 
 .us {
   width: 100%;
@@ -550,7 +551,7 @@ header.container {
   background-color: var(--color-text-dark);
 }
 
-/*Linha do tempo do projeto*/
+/*LINHA DO TEMPO DO PROJETO*/
 
 
 .time-line-title {

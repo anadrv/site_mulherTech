@@ -1,8 +1,7 @@
 @media (min-width: 600px) {
   .mobile-nav {
-    display: none; 
+    display: none;
   }
-
 }
 
 @media (max-width: 599px) {
@@ -10,11 +9,11 @@
     display: none;
   }
 
-  
+  /*SOBRE O PROJETO*/
+
   .about {
     height: auto;
     padding: 50px 0;
-
   }
 
   .front-container {
@@ -29,7 +28,7 @@
   }
 
   .text {
-    width: 100%;
+    width: 85%;
     margin-left: 0;
   }
 
@@ -39,26 +38,200 @@
     display: block;
     margin: 0 auto;
   }
+
+  /*EVENTOS*/
+
+  .events {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .events-workshops {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 80px;
+    text-align: start;
+  }
+
+  .event-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .event-img {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    box-shadow: var(--shadow-default);
+    border-radius: 10px;
+  }
+
+  .seta {
+    width: 40px;
+    min-width: 40px;
+  }
+
+  .date {
+    margin-right: 0;
+  }
+  .description {
+    text-align: justify;
+    width: 60%;
+    margin-left: 30px;
+  }
+
+  /*PODCAST*/
+
+  .podcast-info-covers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .podcast-info-covers h2 {
+    font-size: 2rem;
+    margin-right: 0px;
+    margin: 20px 0px 40px 0px;
+  }
+  .covers {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .image-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*DEPOIMENTOS*/
+
+  .statements-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 50px;
+  }
+
+  .us-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 85%;
+  }
+
+  .text-us {
+    align-items: center;
+    gap: 40px;
+    max-width: 500px;
+    font-size: 0.9rem;
+    padding: 0px 0px 60px 0px;
+    text-indent: 1rem;
+  }
+
+  .us-container img {
+    width: 60%;
+  }
 }
 
-@media (min-width: 600px) and (max-width: 950px) {
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-family);
-  color: var(--primary-color);
-  font-size: 0.85rem;
-}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 0.85rem;
+  }
 
-header.container {
-  padding: 30px 5px;
-}
+  header.container {
+    padding: 30px 5px;
+  }
 
-.logo {
-  font-size: 1rem;
-  padding: 0px 15px;
-}
+  .logo {
+    font-size: 1rem;
+    padding: 0px 15px;
+  }
 
-}
+  /*SOBRE O PROJETO*/
+  .about {
+    height: auto;
+    padding: 90px 0;
+  }
 
+  .front-container {
+    align-items: end;
+    height: auto;
+    text-align: justify;
+    font-size: 0.8rem;
+    padding: 0 10%;
+    gap: 40px;
+  }
+
+  .text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /*EVENTOS*/
+
+  .events {
+    align-items: end;
+    height: auto;
+    text-align: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .events-workshops {
+    width: 80%;
+    margin-left: 70px;
+    margin-top: 80px;
+    text-align: start;
+  }
+
+  .event-img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  .seta {
+    width: 50px;
+    min-width: 30px;
+  }
+
+  .date {
+    margin-right: 0;
+  }
+  .description {
+    text-align: justify;
+    width: 60%;
+    margin-left: 30px;
+    font-size: 0.9rem;
+  }
+
+  /*PODCAST*/
+
+  .covers {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .image-container {
+    width: 40%;
+    margin-bottom: 24px;
+  }
+
+  /*DEPOIMENTOS*/
+
+  .statements-grid {
+    margin: 50px 50px;
+  }
+
+  /*QUEM SOMOS*/
+}
