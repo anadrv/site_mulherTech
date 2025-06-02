@@ -6,35 +6,55 @@
     <title>Contato</title>
     <link rel="stylesheet" href="/assets/styles.css" />
     <link rel="stylesheet" href="/assets/contact-us.css" />
-    <link rel="stylesheet" href="/assets/media-queries.css">
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/media-queries.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <div id="header-placeholder"></div>
     <div id="mobile-nav-placeholder"></div>
+
     <main>
       <div class="contact-us">
-        <div class="contact-info">
-          <h1>Contato</h1>
-          <ul class="icons">
-            <li>
-              <img src="/assets/images/icon-uni.png" alt="Ícone Unifacisa" />
-              <a href="https://unifacisa.edu.br">unifacisa.edu.br</a>
+        <div class="contact-us__info">
+          <h1 class="contact-us__title">Contato</h1>
+          <ul class="contact-us__icons">
+            <li class="contact-us__icon-item">
+              <img
+                src="/assets/images/icon-uni.png"
+                alt="Ícone da Unifacisa"
+                class="contact-us__icon-img"
+              />
+              <a
+                href="https://unifacisa.edu.br"
+                class="contact-us__icon-link"
+                aria-label="Site da Unifacisa"
+              >unifacisa.edu.br</a>
             </li>
-            <li>
-              <img src="/assets/images/icon-email.png" alt="Ícone Email" />
-              <a href="mailto:email@maisunifacisa.com.br"
-                >email@maisunifacisa.com.br</a
-              >
+            <li class="contact-us__icon-item">
+              <img
+                src="/assets/images/icon-email.png"
+                alt="Ícone de email"
+                class="contact-us__icon-img"
+              />
+              <a
+                href="mailto:email@maisunifacisa.com.br"
+                class="contact-us__icon-link"
+                aria-label="Enviar email para email@maisunifacisa.com.br"
+              >email@maisunifacisa.com.br</a>
             </li>
           </ul>
         </div>
-        <div class="image">
-          <img src="/assets/images/contact-us.png" alt="Contato" />
+
+        <div class="contact-us__image">
+          <img
+            src="/assets/images/contact-us.png"
+            alt="Ilustração representando formas de contato"
+          />
         </div>
       </div>
     </main>
-    <footer id="footer"></footer>
+
+    <footer id="footer" role="contentinfo"></footer>
     <script src="/assets/script.js"></script>
   </body>
 </html>
