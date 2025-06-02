@@ -120,6 +120,11 @@ nav a.active {
   font-size: 1.2rem;
 }
 
+.mobile-menu li a:hover {
+  color: black;
+
+}
+
 .mobile-menu.show {
   display: flex;
 }
