@@ -88,6 +88,18 @@
     font-weight: bold;
 }
 
+:focus-visible,
+.btn-listen:focus-visible,
+.link a:focus-visible {
+    outline: 3px solid #FFD54F;
+    outline-offset: 2px;
+}
+
+.cover-img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 @media (max-width: 599px) {
 
