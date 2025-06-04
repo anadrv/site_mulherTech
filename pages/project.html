@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,16 +14,16 @@
     />
   </head>
   <body>
-    <div id="header-placeholder"></div>
-    <div id="mobile-nav-placeholder"></div>
+    <header role="banner" id="header-placeholder"></header>
+    <nav id="mobile-nav-placeholder" aria-label="Menu de navegação móvel"></nav>
 
-    <main>
+    <main id="main-content">
 
-    <!--DESAFIO UNIFACISA-->
-      <section class="who-started container">
-        <div class="who-started-text">
-          <h1>Desafio unifacisa - onde tudo começou</h1>
-          <p>
+      <!--DESAFIO UNIFACISA-->
+      <section class="who-started container" aria-labelledby="desafio-title">
+        <div class="who-started__text"">
+          <h1 class="who-started__title"">Desafio Unifacisa - Onde tudo começou</h1>
+          <p class="who-started__description">
             O desafio é voltado para o público feminino, que consiste em
             colaborar, construir um perfil e um mapeamento do público-alvo
             específico. Criando um diálogo consistente com ações já existentes
@@ -31,15 +31,23 @@
             diversidade, fortalecendo a representatividade feminina na
             tecnologia.
           </p>
-          <img src="/assets/images/project-img.png" alt="" class="project-img-mobile"/>
+          <img
+            src="/assets/images/project-img.png"
+            alt="Ilustração relacionada ao desafio da Unifacisa"
+            class="project-img-mobile"
+          />
         </div>
-        <img src="/assets/images/project-img.png" alt="" class="project-img"/>
+        <img
+          src="/assets/images/project-img.png"
+          alt="Ilustração relacionada ao desafio da Unifacisa"
+          class="project-img"
+        />
       </section>
 
       <!--PROJETO-->
-      <section class="project container">
-        <div class="project-text">
-          <h2>O projeto</h2>
+      <section class="project container" aria-labelledby="projeto-title">
+        <div class="project__text"">
+          <h2 id="project__title">O projeto</h2>
           <p>
             As mulheres têm ingressado na área de tecnologia, mas muitas vezes
             não concluem seus estudos ou desistem precocemente de suas
@@ -49,23 +57,31 @@
             psicossociais, como a síndrome do impostor e a presença (ou
             ausência) de apoio, influenciam a evasão de mulheres na área de TI.
           </p>
-          <img src="/assets/images/project-img-01.png" alt="" class="project-img-mobile acc"/>
+          <img
+            src="/assets/images/project-img-01.png"
+            alt="Gráfico sobre mulheres na tecnologia"
+            class="project-img-mobile acc"
+          />
         </div>
-        <img src="/assets/images/project-img-01.png" alt="" class="project-img"/>
+        <img
+          src="/assets/images/project-img-01.png"
+          alt="Gráfico sobre mulheres na tecnologia"
+          class="project-img"
+        />
       </section>
 
-      <!--DESVOLVIMENTO-->
-      <section class="development">
-        <div class="development-text container">
-          <h2>Desenvolvimento</h2>
-          <p>
+      <!--DESENVOLVIMENTO-->
+      <section class="development" aria-labelledby="dev-title">
+        <div class="development__text container">
+          <h2 id="dev-title">Desenvolvimento</h2>
+          <p class="development__paragraph">
             A evasão feminina na área de tecnologia é um assunto que pode
             envolver diversos fatores. Apesar dos avanços na inclusão de
             mulheres no setor, muitas acabam desistindo de seus cursos e
             carreiras na área, o que levanta a necessidade de uma análise mais
             aprofundada sobre as raízes do problema e as possíveis soluções.
           </p>
-          <p>
+          <p class="development__paragraph">
             Uma das principais questões a serem levadas em consideração é a
             influência dos estereótipos de gênero, que pode influenciar no
             sentimento de pertencimento das mulheres na área de tecnologia. Na
@@ -78,10 +94,10 @@
         </div>
       </section>
 
-      <!--SOLUCAO-->
-      <section class="solution container">
+      <!--SOLUÇÃO-->
+      <section class="solution container" aria-labelledby="solution-title">
         <div class="solution-text">
-          <h2>Nossa solução</h2>
+          <h2 id="solution-title">Nossa solução</h2>
           <p>
             Desenvolvemos um formulário para investigar os principais fatores
             relacionados à evasão de mulheres na área de TI, permitindo
@@ -105,18 +121,29 @@
             mais inclusivo e reduzir os fatores que levam à evasão na área de
             TI.
           </p>
-          <img src="/assets/images/form-img.png" alt="" class="solution-img-mobile"/>
+          <img
+            src="/assets/images/form-img.png"
+            alt="Protótipo do site com formulário e recursos de apoio"
+            class="solution-img-mobile"
+          />
         </div>
-        <img src="/assets/images/form-img.png" alt="" class="solution-img"/>
+        <img
+          src="/assets/images/form-img.png"
+          alt="Protótipo do site com formulário e recursos de apoio"
+          class="solution-img"
+        />
       </section>
 
       <!--RESUMO EXPANDIDO-->
-      <section class="extend-summary">
-        <div class="extend-summary-text-img container">
-          <img src="/assets/images/resume-img.png" alt="" />
+      <section class="extend-summary" aria-labelledby="resumo-title">
+        <div class="summary__content container">
+          <img
+            src="/assets/images/resume-img.png"
+            alt="Imagem representando o resumo expandido do projeto"
+          />
           <div class="extend-summary-text">
             <div class="extend-summary-text-only">
-              <h2>Resumo expandido</h2>
+              <h2 id="resumo-title">Resumo expandido</h2>
               <p>
                 Foi elaborado um resumo expandido sobre o projeto, destacando os
                 objetivos, metodologia e resultados alcançados até o momento. O
@@ -141,29 +168,37 @@
                 carreira.
               </p>
             </div>
-            <div class="statistics">
+            <div
+              class="statistics"
+              role="group"
+              aria-label="Estatísticas da pesquisa com mulheres na TI"
+            >
               <div class="statistic">
                 <h4>80%</h4>
                 <p>Recebe apoio da família.</p>
               </div>
-
               <div class="statistic">
                 <h4>93,3%</h4>
                 <p>Buscaram capacitação além da graduação.</p>
               </div>
-
               <div class="statistic">
                 <h4>58,3%</h4>
                 <p>Já pensaram em desistir do curso.</p>
               </div>
             </div>
-            <a href="#" class="download" download>LER RESUMO</a>
+            <a
+              href="#"
+              class="download"
+              download
+              aria-label="Baixar o resumo expandido do projeto em PDF"
+              >LER RESUMO</a
+            >
           </div>
         </div>
       </section>
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer" role="contentinfo"></footer>
     <script src="/assets/script.js"></script>
   </body>
 </html>
