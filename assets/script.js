@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
-      destacarLinkAtivo();
+      destacarLinkAtivo('#header-placeholder nav a');
     })
     .catch(error => console.error('Erro ao carregar o header:', error));
 
@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       document.getElementById('mobile-nav-placeholder').innerHTML = data;
 
-      // Configurar toggle do menu mobile no conteúdo carregado
+      // Toggle do menu mobile
       const toggle = document.querySelector('.menu-toggle');
       const menu = document.querySelector('.mobile-menu');
 
@@ -25,6 +25,9 @@ window.addEventListener("DOMContentLoaded", () => {
           menu.classList.toggle('show');
         });
       }
+
+      // Destacar link ativo também no menu mobile
+      destacarLinkAtivo('.mobile-menu a');
     })
     .catch(error => console.error('Erro ao carregar o menu mobile:', error));
 
@@ -36,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Erro ao carregar o footer:', error));
 
-  // Carrossel de eventos (mesmo código seu)
+  // Carrossel de eventos
   const events = [
     {
       date: "06",
@@ -62,7 +65,6 @@ window.addEventListener("DOMContentLoaded", () => {
   ];
 
   let current = 0;
-
   const dateEl = document.querySelector(".date h3");
   const monthEl = document.querySelector(".date p");
   const descEl = document.querySelector(".description");
@@ -85,13 +87,13 @@ function abrirLink(url) {
   window.open(url, "_blank");
 }
 
-function destacarLinkAtivo() {
+function destacarLinkAtivo(selector) {
   const path = window.location.pathname;
-  const links = document.querySelectorAll('#header-placeholder nav a');
+  const links = document.querySelectorAll(selector);
 
   links.forEach(link => {
     const href = link.getAttribute('href');
-    if (href === path) {
+    if (path.endsWith(href.split("/").pop())) {
       link.classList.add('active');
     }
   });
