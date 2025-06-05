@@ -1,8 +1,18 @@
+const basePath = '/site_mulherTech/';
+
 fetch('pages/header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('header-placeholder').innerHTML = data;
 
+    // **Ajusta os hrefs dos links dentro do header**
+    document.querySelectorAll('#header-placeholder nav a').forEach(link => {
+      const href = link.getAttribute('href');
+      // Se o href não for absoluto, nem âncora (#)
+      if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('/')) {
+        link.setAttribute('href', basePath + href);
+      }
+    });
 
     destacarLinkAtivo();
   })
@@ -43,13 +53,14 @@ function abrirLink(url) {
 
 function destacarLinkAtivo() {
   const path = window.location.pathname;
-  const links = document.querySelectorAll("nav a");
 
-  if (path === "/" || path === "/index.html") return;
+  // Seleciona só os links dentro do header
+  const links = document.querySelectorAll('#header-placeholder nav a');
 
   links.forEach(link => {
-    if (link.getAttribute("href") === path) {
-      link.classList.add("active");
+    const href = link.getAttribute('href');
+    if (href === path) {
+      link.classList.add('active');
     }
   });
 }
