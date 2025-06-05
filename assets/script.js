@@ -8,15 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
-
-      // Ajustar hrefs dos links do header
-      document.querySelectorAll('#header-placeholder nav a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('/')) {
-          link.setAttribute('href', basePath + href);
-        }
-      });
-
       destacarLinkAtivo();
     })
     .catch(error => console.error('Erro ao carregar o header:', error));
