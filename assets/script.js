@@ -1,4 +1,4 @@
-fetch('/pages/header.html')
+fetch('pages/header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('header-placeholder').innerHTML = data;
@@ -12,14 +12,14 @@ window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("mostrar");
 });
 
-fetch('/pages/footer.html')
+fetch('pages/footer.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
   })
   .catch(error => console.error('Erro ao carregar o footer:', error));
 
-  fetch('/pages/mobile-nav.html')
+  fetch('pages/mobile-nav.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('mobile-nav-placeholder').innerHTML = data;
@@ -60,21 +60,21 @@ const events = [
     month: "nov",
     title: "Café Colaborativo",
     desc: "Encontro para conversa e acolhimento das novas integrantes na área de TI da faculdade.",
-    img: "/assets/images/event-image.png"
+    img: "assets/images/event-image.png"
   },
   {
     date: "15",
     month: "maio",
     title: "Workshop Front-end",
     desc: "Oficina prática de HTML, CSS e JS voltada para iniciantes.",
-    img: "/assets/images/podcast.jpg"
+    img: "assets/images/podcast.jpg"
   },
   {
     date: "30",
     month: "junho",
     title: "Papo Tech",
     desc: "Bate-papo com profissionais da área sobre carreira e tecnologia.",
-    img: "/assets/images/podcast.jpg"
+    img: "assets/images/podcast.jpg"
   }
 ];
 
