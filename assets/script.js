@@ -1,5 +1,3 @@
-const basePath = '/site_mulherTech/';
-
 window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("mostrar");
 
@@ -12,20 +10,13 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Erro ao carregar o header:', error));
 
-  // Carregar footer
-  fetch('pages/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => console.error('Erro ao carregar o footer:', error));
-
   // Carregar menu mobile
   fetch('pages/mobile-nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('mobile-nav-placeholder').innerHTML = data;
 
+      // Configurar toggle do menu mobile no conteúdo carregado
       const toggle = document.querySelector('.menu-toggle');
       const menu = document.querySelector('.mobile-menu');
 
@@ -37,7 +28,15 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Erro ao carregar o menu mobile:', error));
 
-  // Inicializar carrossel de eventos
+  // Carregar footer
+  fetch('pages/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Erro ao carregar o footer:', error));
+
+  // Carrossel de eventos (mesmo código seu)
   const events = [
     {
       date: "06",
