@@ -200,7 +200,7 @@ main {
 
   .project-img-mobile {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-top: 40px;
   }
@@ -216,9 +216,7 @@ main {
   .project__text {
     max-width: 90%;
   }
-  .project-img-mobile.acc {
-    max-width: 350px;
-  }
+  
 
   .development__text {
     max-width: 90%;
@@ -256,6 +254,7 @@ main {
   .summary__content img {
     max-width: 80%;
     height: auto;
+    padding-top: 40px;
   }
 
   .extend-summary-text-img {
