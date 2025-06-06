@@ -43,11 +43,11 @@
     </section>
 
     <!--EVENTOS E WORKSHOPS-->
-    <section class="events container">
+    <section class="events container" aria-labelledby="events-title">
       <div class="events-workshops">
-        <h2>Eventos e Workshops</h2>
-        <div class="date-description">
-          <div class="date">
+        <h2 id="events-title">Eventos e Workshops</h2>
+        <div class="date-description" role="group" aria-label="Data e descrição do evento">
+          <div class="date" role="group" aria-label="Data do evento">
             <h3>06</h3>
             <p>nov</p>
           </div>
@@ -60,8 +60,8 @@
         </div>
       </div>
       <div class="event-image">
-        <img src="assets/images/event-image.png" alt="Eventos e Workshops" class="event-img" />
-        <img src="assets/images/seta.png" alt="Próximo evento" class="seta" />
+        <img src="assets/images/event-image.png" alt="Mulher palestrante em workshop de tecnologia" class="event-img" />
+        <img src="assets/images/seta.png" alt="" aria-hidden="true" class="seta" />
       </div>
     </section>
 
