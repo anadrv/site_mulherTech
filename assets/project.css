@@ -191,7 +191,7 @@ body {
   }
 
   .who-started-text {
-    max-width: 90%;
+    width: 90%;
   }
 
   .project-img-mobile{
@@ -219,7 +219,7 @@ body {
 }
 
 .development-text {
-    max-width: 90%;
+    width: 90%;
 }
 
 .solution {
