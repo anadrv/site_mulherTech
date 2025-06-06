@@ -139,6 +139,12 @@ h3 {
     width: 90%;
     margin: 0 auto;
   }
+
+  .cards {
+    width: 90%;
+    align-items: center;
+  }
+
   .card {
     min-height: 250px;
   }
