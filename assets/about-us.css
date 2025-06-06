@@ -177,13 +177,12 @@ h3 {
   }
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+  @media (min-width: 600px) and (max-width: 1024px) {
   .grupo-linha {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Rótulo 'Desenvolvimento web' em cima no tablet */
   .grupo-linha .rotulo.web {
     order: -1;
     margin-bottom: 10px;
@@ -192,18 +191,10 @@ h3 {
     text-align: center;
   }
 
-  /* Linha2: 2 cards por linha no tablet */
   .linha2 {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
     margin: 0 auto 40px auto;
-  }
-
-  .rotulo {
-    writing-mode: horizontal-tb;
-    transform: none;
-    margin: 10px 0;
-    text-align: center;
   }
 }
 
