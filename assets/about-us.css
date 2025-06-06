@@ -183,7 +183,7 @@ h3 {
     align-items: center;
   }
 
-  /* Faz o rótulo "Desenvolvimento web" ficar acima da linha1 */
+  /* Rótulo 'Desenvolvimento web' em cima no tablet */
   .grupo-linha .rotulo.web {
     order: -1;
     margin-bottom: 10px;
@@ -192,14 +192,7 @@ h3 {
     text-align: center;
   }
 
-  .linha1 {
-    grid-template-columns: repeat(3, 1fr);
-    width: 95%;
-    max-width: 850px;
-    margin: 0 auto;
-  }
-
-
+  /* Linha2: 2 cards por linha no tablet */
   .linha2 {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
