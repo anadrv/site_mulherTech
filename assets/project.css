@@ -200,9 +200,9 @@ main {
 
   .project-img-mobile {
     display: block;
-    max-width: 80%;
+    max-width: 95%;
     height: auto;
-    margin-top: 40px;
+    margin: 20px auto;
   }
 
   .project {
@@ -269,7 +269,6 @@ main {
   }
   .extend-summary-text-only p {
     max-width: 80%;
-    padding: 0 20px;
   }
   .statistics {
     align-items: start;
