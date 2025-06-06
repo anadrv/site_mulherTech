@@ -297,7 +297,7 @@ main {
   }
 }
 
-@media (min-width: 600px) and (max-width: 1020px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
@@ -306,12 +306,16 @@ main {
     align-items: center;
   }
 
-  .who-started-text {
-    max-width: 90%;
+  .who-started__text {
+    max-width: 80%;
   }
 
   .project-img-mobile {
     display: block;
+  }
+
+  .project__text {
+    max-width: 80%;
   }
 
   .project-img {
