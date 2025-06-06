@@ -111,7 +111,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .linha1 {
     grid-template-columns: repeat(1, 1fr); 
   }
