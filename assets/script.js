@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("mostrar");
 
   // Carregar header
-  fetch('pages/header.html')
+  fetch('/site_mulherTech/pages/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error('Erro ao carregar o header:', error));
 
   // Carregar menu mobile
-  fetch('pages/mobile-nav.html')
+  fetch('/site_mulherTech/pages/mobile-nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('mobile-nav-placeholder').innerHTML = data;
@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error('Erro ao carregar o menu mobile:', error));
 
   // Carregar footer
-  fetch('pages/footer.html')
+  fetch('/site_mulherTech/pages/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;
