@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      // Destacar link ativo também no menu mobile
+      // Destacar link ativo no menu mobile
       destacarLinkAtivo('.mobile-menu a');
     })
     .catch(error => console.error('Erro ao carregar o menu mobile:', error));
@@ -93,6 +93,7 @@ function destacarLinkAtivo(selector) {
 
   links.forEach(link => {
     const href = link.getAttribute('href');
+    // compara só o nome do arquivo para destacar o link ativo
     if (path.endsWith(href.split("/").pop())) {
       link.classList.add('active');
     }
