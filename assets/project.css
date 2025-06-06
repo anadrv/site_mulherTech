@@ -268,7 +268,9 @@ main {
   .extend-summary-text-only h2 {
     margin-top: 50px;
   }
-
+  .extend-summary-text-only p {
+    max-width: 85%;
+  }
   .statistics {
     align-items: start;
     justify-content: space-between;
