@@ -221,7 +221,7 @@ main {
   }
 
   .development__text {
-    width: 90%;
+    max-width: 80%;
   }
 
   .solution {
@@ -246,11 +246,17 @@ main {
   }
 
   .summary__content {
-  flex-direction: column;
-  align-items: center;
-justify-content: center;
-  gap: 50px;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+  }
+
+  .summary__content img {
+    max-width: 80%;
+    height: auto;
+  }
 
   .extend-summary-text-img {
     flex-direction: column-reverse;
