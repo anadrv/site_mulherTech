@@ -256,6 +256,8 @@ main {
     justify-content: center;
     gap: 50px;
     padding: 20px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .summary__content img {
