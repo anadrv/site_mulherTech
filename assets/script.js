@@ -25,9 +25,6 @@ window.addEventListener("DOMContentLoaded", () => {
           menu.classList.toggle('show');
         });
       }
-
-      // Destacar link ativo no menu mobile
-      destacarLinkAtivo('.mobile-menu a');
     })
     .catch(error => console.error('Erro ao carregar o menu mobile:', error));
 
