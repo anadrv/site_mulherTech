@@ -268,7 +268,8 @@ main {
     margin-top: 50px;
   }
   .extend-summary-text-only p {
-    max-width: 85%;
+    max-width: 80%;
+    padding: 0 20px;
   }
   .statistics {
     align-items: start;
