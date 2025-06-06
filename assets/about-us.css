@@ -137,6 +137,7 @@ h3 {
     grid-template-columns: 1fr;
     margin: 0 auto;
     width: 90%;
+    margin: 0 auto;
   }
   .card {
     min-height: 250px;
