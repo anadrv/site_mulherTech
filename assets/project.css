@@ -307,7 +307,7 @@ main {
   }
 
   .who-started-text {
-    max-width: 70%;
+    max-width: 90%;
   }
 
   .project-img-mobile {
@@ -323,6 +323,10 @@ main {
     text-align: center;
     margin: 50px auto;
     gap: 20px;
+  }
+
+  .development__text {
+    max-width: 90%;
   }
 
   .solution {
