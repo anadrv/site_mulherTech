@@ -87,15 +87,3 @@ function abrirLink(url) {
   window.open(url, "_blank");
 }
 
-function destacarLinkAtivo(selector) {
-  const path = window.location.pathname;
-  const links = document.querySelectorAll(selector);
-
-  links.forEach(link => {
-    const href = link.getAttribute('href');
-    // compara só o nome do arquivo para destacar o link ativo
-    if (path.endsWith(href.split("/").pop())) {
-      link.classList.add('active');
-    }
-  });
-}
