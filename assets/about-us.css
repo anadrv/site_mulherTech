@@ -111,6 +111,26 @@ h3 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 600px) {
+  .linha1 {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .linha2 {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .info h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .info p {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 1000px) {
   .linha1 {
     grid-template-columns: repeat(2, 1fr); 
