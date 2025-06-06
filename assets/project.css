@@ -202,7 +202,7 @@ main {
     display: block;
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .project {
@@ -283,6 +283,8 @@ main {
     align-items: start;
     justify-content: space-between;
     gap: 10px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .extend-summary-text-img img {
