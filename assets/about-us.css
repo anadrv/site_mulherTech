@@ -25,6 +25,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  width: 95%;
 }
 
 .grupo-linha {
@@ -115,8 +116,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .info {
     flex-direction: column;
     margin: 10px 0;
@@ -129,7 +129,8 @@ h3 {
   }
 
   .info h1 {
-    padding-left: 0;
+    padding-left:0;
+  
   }
 
   .linha1,
@@ -140,19 +141,13 @@ h3 {
   }
 
   .cards {
-    width: 100%;
-    padding: 0 5%;
-    box-sizing: border-box;
+    width: 90%;
     align-items: center;
   }
 
   .card {
-    width: 100%;
-    max-width: 100%;
     min-height: 250px;
-    box-sizing: border-box;
   }
-
   .grupo-linha {
     flex-direction: column;
     align-items: center;
@@ -165,9 +160,9 @@ h3 {
     text-align: center;
   }
 
-  .web {
-    order: -1;
-  }
+.web {
+  order: -1;
+}
 
   .info-card {
     margin: 10px;
