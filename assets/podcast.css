@@ -80,6 +80,7 @@
 
 .podcast__card-description {
         font-size: 0.9rem;
+        text-align: justify;
 }
 
 .podcast__card-links {
