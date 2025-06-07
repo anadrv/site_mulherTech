@@ -333,7 +333,7 @@ nav a.active {
   margin: 50px 90px;
 }
 
-.statement {
+.statements__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -349,7 +349,7 @@ nav a.active {
   transition: transform 0.3s ease;
 }
 
-.statement:hover {
+.statements__item:hover {
   transform: translateY(-2px);
 }
 
