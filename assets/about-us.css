@@ -113,11 +113,11 @@ h3 {
 
 @media (max-width: 599px) {
   .linha1 {
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .linha2 {
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .info {
@@ -139,10 +139,10 @@ h3 {
 
 @media (min-width: 600px) and (max-width: 1000px) {
   .linha1 {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .linha2 {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
