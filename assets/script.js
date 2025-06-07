@@ -49,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
       month: "maio",
       title: "Workshop Java",
       desc: "Workshop prático sobre Java e programação orientada a objetos.",
-      img: "assets/images/podcast.jpg"
+      img: "assets/images/workshop-java.png"
     }
   ];
 
