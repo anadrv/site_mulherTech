@@ -46,10 +46,10 @@ window.addEventListener("DOMContentLoaded", () => {
       img: "assets/images/event-image.png"
     },
     {
-      date: "15",
+      date: "17",
       month: "maio",
-      title: "Workshop Front-end",
-      desc: "Oficina prática de HTML, CSS e JS voltada para iniciantes.",
+      title: "Workshop Java",
+      desc: "Workshop prático sobre Java e programação orientada a objetos.",
       img: "assets/images/podcast.jpg"
     },
     {
