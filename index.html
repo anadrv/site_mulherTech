@@ -1,293 +1,451 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mulher Tech</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/media-queries.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mulher Tech</title>
-  <link rel="stylesheet" href="assets/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="assets/media-queries.css">
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-</head>
+  <body>
+    <div id="header-placeholder"></div>
+    <div id="mobile-nav-placeholder"></div>
 
-<body>
-  <div id="header-placeholder"></div>
-  <div id="mobile-nav-placeholder"></div>
+    <main>
+      <!--SOBRE O PROJETO-->
 
-  <main>
-
-    <!--SOBRE O PROJETO-->
-
-    <section class="about" aria-labelledby="titulo-plataforma">
-      <div class="front-container container">
-        <div class="text">
-          <h2 id="titulo-plataforma" class="title">
-            Uma plataforma feita por e para mulheres na tecnologia.
-          </h2>
-          <p>
-            Aqui, você encontra acolhimento, apoio e representatividade. Nosso
-            objetivo é dar visibilidade às trajetórias femininas na área de TI
-            e fortalecer quem faz parte desse universo — enfrentando a evasão
-            com informação, inspiração e ação.
-          </p>
+      <section class="about" aria-labelledby="titulo-plataforma">
+        <div class="front-container container">
+          <div class="text">
+            <h2 id="titulo-plataforma" class="title">
+              Uma plataforma feita por e para mulheres na tecnologia.
+            </h2>
+            <p>
+              Aqui, você encontra acolhimento, apoio e representatividade. Nosso
+              objetivo é dar visibilidade às trajetórias femininas na área de TI
+              e fortalecer quem faz parte desse universo — enfrentando a evasão
+              com informação, inspiração e ação.
+            </p>
+          </div>
+          <div class="front-image">
+            <img
+              src="assets/images/image-front-page.png"
+              alt="Ilustração de uma mulher programando, representando a presença feminina na tecnologia"
+              class="image"
+            />
+          </div>
         </div>
-        <div class="front-image">
+      </section>
+
+      <!--EVENTOS E WORKSHOPS-->
+      <section class="events container" aria-labelledby="events-title">
+        <div class="events-workshops">
+          <h2 id="events-title">Eventos e Workshops</h2>
+          <div
+            class="date-description"
+            role="group"
+            aria-label="Data e descrição do evento"
+          >
+            <div class="date" role="group" aria-label="Data do evento">
+              <h3>06</h3>
+              <p>nov</p>
+            </div>
+            <div class="description">
+              <p>
+                <strong>Café Colaborativo</strong> - encontro para conversa e
+                acolhimento das novas integrantes na área de TI da faculdade.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="event-image">
           <img
-            src="assets/images/image-front-page.png"
-            alt="Ilustração de uma mulher programando, representando a presença feminina na tecnologia"
-            class="image"
+            src="assets/images/event-image.png"
+            alt="Foto do instagram do CodeRosa, do café colaborativo"
+            class="event-img"
+          />
+          <img
+            src="assets/images/seta.png"
+            alt=""
+            aria-hidden="true"
+            class="seta"
           />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--EVENTOS E WORKSHOPS-->
-    <section class="events container" aria-labelledby="events-title">
-      <div class="events-workshops">
-        <h2 id="events-title">Eventos e Workshops</h2>
-        <div class="date-description" role="group" aria-label="Data e descrição do evento">
-          <div class="date" role="group" aria-label="Data do evento">
-            <h3>06</h3>
-            <p>nov</p>
+      <!--PODCAST-->
+      <section class="podcast">
+        <div class="podcast-info-covers container">
+          <div>
+            <h2>Podcast</h2>
           </div>
-          <div class="description">
+          <div class="covers">
+            <div class="image-container">
+              <img
+                src="assets/images/podcast-img.png"
+                alt="Capa do podcast"
+                class="cover-podcast"
+                onclick="event.preventDefault(); alert('Link ainda não disponível.');"
+              />
+              <button
+                class="btn-overlay"
+                aria-label="Play"
+                onclick="event.preventDefault(); alert('Link ainda não disponível.');"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+
+            <div class="image-container">
+              <img
+                src="assets/images/podcast-img.png"
+                alt="Capa do podcast"
+                class="cover-podcast"
+                onclick="event.preventDefault(); alert('Link ainda não disponível.');"
+              />
+              <button
+                class="btn-overlay"
+                aria-label="Play"
+                onclick="event.preventDefault(); alert('Link ainda não disponível.');"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+
+            <div class="image-container">
+              <img
+                src="assets/images/podcast-img.png"
+                alt="Capa do podcast"
+                class="cover-podcast"
+                onclick="event.preventDefault(); alert('Link ainda não disponível.');"
+              />
+              <button
+                class="btn-overlay"
+                aria-label="Play"
+                onclick="event.preventDefault(); alert('Link ainda não disponível.');"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--DEPOIMENTOS-->
+
+      <section
+        class="statements-container"
+        aria-label="Seção de depoimentos de mulheres na tecnologia"
+      >
+        <div class="statements container">
+          <h2 class="title-statement">Depoimentos</h2>
+          <div class="statements-grid">
+            <div class="statement">
+              <p>
+                Como professora de Sistemas de Informação e mulher na
+                tecnologia, sei o quanto o caminho pode ser desafiador. O
+                projeto Mulher TECH representa acolhimento, apoio e
+                visibilidade, exatamente o que tantas de nós precisamos para
+                seguir firmes nessa jornada. Uma iniciativa sensível, necessária
+                e inspiradora.
+              </p>
+              <p class="person-name">PROFESSORA LUCIANA LUNGUINHO</p>
+            </div>
+
+            <div class="statement">
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                  impedit, tempore accusantium ab nostrum optio? Blanditiis odit
+                  dolorum minima, exercitationem ipsam harum in, molestias
+                  tempora totam, soluta iste laudantium dolore?
+                </p>
+                <p class="person-name">NOME DA PESSOA</p>
+              </blockquote>
+            </div>
+
+            <div class="statement">
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                  impedit, tempore accusantium ab nostrum optio? Blanditiis odit
+                  dolorum minima, exercitationem ipsam harum in, molestias
+                  tempora totam, soluta iste laudantium dolore?
+                </p>
+                <p class="person-name">NOME DA PESSOA</p>
+              </blockquote>
+            </div>
+
+            <div class="statement">
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                  impedit, tempore accusantium ab nostrum optio? Blanditiis odit
+                  dolorum minima, exercitationem ipsam harum in, molestias
+                  tempora totam, soluta iste laudantium dolore?
+                </p>
+                <p class="person-name">NOME DA PESSOA</p>
+              </blockquote>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--FRASE-->
+      <section class="phrase">
+        <h3>a força feminina é o código da mudança</h3>
+      </section>
+
+      <!--PARA ESTUDOS-->
+      <section class="studies container">
+        <div class="studies-container">
+          <div class="title-section">
+            <img
+              src="assets/images/icon-para-estudos.png"
+              alt="Ícone de código"
+            />
+            <h2 class="for-studies">Para<br />estudos</h2>
+          </div>
+
+          <div class="recommendations">
+            <div class="item">
+              <img src="assets/images/icon-freecode.png" alt="" />
+              <h4>Responsive Web Design</h4>
+              <p>
+                You'll learn the languages that developers use to build
+                webpages: HTML and CSS.
+              </p>
+              <a
+                href="https://www.freecodecamp.org/learn/2022/responsive-web-design"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acessar</a
+              >
+            </div>
+
+            <div class="item">
+              <img src="assets/images/icon-cursoemvideo.png" alt="" />
+              <h4>Curso em Vídeo</h4>
+              <p>
+                Cursos gratuitos com foco em lógica, HTML, CSS e JavaScript.
+              </p>
+              <a
+                href="https://www.cursoemvideo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acessar</a
+              >
+            </div>
+
+            <div class="item">
+              <img src="assets/images/icon-brocode.png" alt="" />
+              <h4>Bro Code</h4>
+              <p>
+                Tutoriais em vídeo sobre desenvolvimento web e linguagens
+                modernas.
+              </p>
+              <a
+                href="https://www.youtube.com/@BroCodez"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acessar</a
+              >
+            </div>
+
+            <div class="item">
+              <img src="assets/images/icon-beecrowd.png" alt="" />
+              <h4>Beecrowd</h4>
+              <p>Plataforma de desafios para treinar lógica de programação.</p>
+              <a
+                href="https://judge.beecrowd.com/pt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acessar</a
+              >
+            </div>
+
+            <div class="item">
+              <img src="assets/images/icon-hashtag.png" alt="" />
+              <h4>Hashtag Treinamentos</h4>
+              <p>Cursos focados em programação para iniciantes e Excel.</p>
+              <a
+                href="https://www.hashtagtreinamentos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acessar</a
+              >
+            </div>
+
+            <div class="item">
+              <img src="assets/images/icon-rocketseat.png" alt="" />
+              <h4>Rocketseat</h4>
+              <p>
+                Comece a programar do zero com conteúdos gratuitos e práticos.
+              </p>
+              <a
+                href="https://www.rocketseat.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acessar</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SOBRE O PROJETO E PESQUISA-->
+
+      <section class="about-project">
+        <div class="about-project-container container">
+          <div class="image-project">
+            <h2>Sobre o projeto</h2>
+            <img
+              src="assets/images/image-research.png"
+              alt=""
+              class="img-proj"
+            />
+          </div>
+          <div class="text-project">
             <p>
-              <strong>Café Colaborativo</strong> - encontro para conversa e
-              acolhimento das novas integrantes na área de TI da faculdade.
+              Apesar dos avanços na inclusão feminina na área de tecnologia,
+              muitas mulheres ainda enfrentam barreiras que as levam a desistir
+              de seus cursos ou carreiras na área de TI. A evasão feminina é um
+              problema complexo, influenciado por diversos fatores como
+              estereótipos de gênero, falta de representatividade, ausência de
+              redes de apoio e questões psicossociais — como a síndrome do
+              impostor e o sentimento de não pertencimento. Diante desse
+              cenário, nasceu o projeto Mulher TECH: uma iniciativa voltada ao
+              acolhimento, à representatividade e ao fortalecimento das
+              trajetórias femininas na tecnologia.
+            </p>
+          </div>
+          <div class="research">
+            <h4>participe<br />da<br />nossa<br />pesquisa</h4>
+            <a
+              href="https://docs.google.com/forms/d/1MfHdyDdNrGdIguSM3bwYK0WzccqkLqNAcpxQrzu2t0o/edit"
+              target="_blank"
+              >clique aqui</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--LINHA DO TEMPO-->
+
+      <section class="time-line container">
+        <div class="time-line-title">
+          <h2>Linha do tempo do projeto</h2>
+        </div>
+        <div class="time-line-info">
+          <div class="line-01">
+            <div class="time-line-topics">
+              <div class="time-line-detail">01</div>
+              <div class="time-line-text">
+                <h4>Desafio Unifacisa: Entendendo a Evasão</h4>
+                <p class="time-line-topic-info">
+                  Início do projeto em parceria com a Accenture, investigando os
+                  motivos da evasão feminina na tecnologia, com foco em
+                  diversidade, inclusão e fatores psicossociais.
+                </p>
+              </div>
+            </div>
+            <div class="time-line-topics">
+              <div class="time-line-detail">02</div>
+              <div class="time-line-text">
+                <h4>Pesquisa Quantitativa</h4>
+                <p class="time-line-topic-info">
+                  Aplicação de formulário para mapear vivências de mulheres na
+                  TI, revelando desafios como isolamento, falta de apoio e baixa
+                  representatividade.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-line-topics">
+              <div class="time-line-detail">03</div>
+              <div class="time-line-text">
+                <h4>Ideação e Prototipagem</h4>
+                <p class="time-line-topic-info">
+                  Criação do protótipo de uma plataforma de apoio, com
+                  funcionalidades como formulário contínuo, podcast,
+                  depoimentos, eventos e mentoria.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="line-02">
+            <div class="time-line-topics">
+              <div class="time-line-detail">04</div>
+              <div class="time-line-text">
+                <h4>Desenvolvimento e Conteúdo</h4>
+                <p class="time-line-topic-info">
+                  Produção dos conteúdos do site, com destaque para figuras
+                  femininas da tecnologia e ações de fortalecimento do
+                  pertencimento.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-line-topics">
+              <div class="time-line-detail">05</div>
+              <div class="time-line-text">
+                <h4>Engajamento e Ações de Suporte</h4>
+                <p class="time-line-topic-info">
+                  Criação de um espaço para divulgação de eventos, workshops e
+                  iniciativas que estejam por acontecer ou em andamento,
+                  incentivando o engajamento e a participação ativa das mulheres
+                  na área de tecnologia.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-line-topics">
+              <div class="time-line-detail">06</div>
+              <div class="time-line-text">
+                <h4>Entrega Final e Proposta de Impacto</h4>
+                <p class="time-line-topic-info">
+                  Apresentação do projeto como uma solução concreta e escalável
+                  para impulsionar a representatividade feminina na tecnologia..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--QUEM SOMOS-->
+      <section class="us">
+        <div class="us-container container">
+          <img src="assets/images/image-us.png" alt="" />
+          <div class="text-us">
+            <h2>Quem somos</h2>
+            <p>
+              Somos sete mulheres - Ana Luisa, Carolina, Larissa, Maria Eduarda,
+              Mônica, Nayara e Sabrina - estudantes do curso de
+              <strong>Sistemas de Informação da Unifacisa</strong>, em
+              diferentes períodos. Estamos unidas pelo Projeto Integrador e pelo
+              Desafio Unifacisa, com o objetivo de mapear e entender as causas
+              da evasão feminina na área de tecnologia, especialmente na nossa
+              faculdade. Nosso propósito é transformar esse cenário e incentivar
+              mais mulheres a ingressarem e permanecerem na área de TI.
             </p>
           </div>
         </div>
-      </div>
-      <div class="event-image">
-        <img src="assets/images/event-image.png" alt="Mulher palestrante em workshop de tecnologia" class="event-img" />
-        <img src="assets/images/seta.png" alt="" aria-hidden="true" class="seta" />
-      </div>
-    </section>
-
-    <!--PODCAST-->
-    <section class="podcast">
-      <div class="podcast-info-covers container">
-        <div>
-          <h2>Podcast</h2>
-        </div>
-        <div class="covers">
-          <div class="image-container">
-            <img src="assets/images/podcast-img.png" alt="" class="cover-podcast"
-              onclick="event.preventDefault(); alert('Link ainda não disponível.');" />
-            <button class="btn-overlay" aria-label="Play"
-              onclick="event.preventDefault(); alert('Link ainda não disponível.');">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/images/podcast-img.png" alt="" class="cover-podcast"
-              onclick="event.preventDefault(); alert('Link ainda não disponível.');" />
-            <button class="btn-overlay" aria-label="Play"
-              onclick="event.preventDefault(); alert('Link ainda não disponível.');">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/images/podcast-img.png" alt="" class="cover-podcast"
-              onclick="event.preventDefault(); alert('Link ainda não disponível.');" />
-            <button class="btn-overlay" aria-label="Play"
-              onclick="event.preventDefault(); alert('Link ainda não disponível.');">
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!--DEPOIMENTOS-->
-
-    <section class="statements-container">
-      <div class="statements container">
-        <h2 class="title-statement">Depoimentos</h2>
-        <div class="statements-grid">
-          <div class="statement"><p>Como professora de Sistemas de Informação e mulher na tecnologia, sei o quanto o caminho pode ser desafiador. O projeto Mulher TECH representa acolhimento, apoio e visibilidade, exatamente o que tantas de nós precisamos para seguir firmes nessa jornada. Uma iniciativa sensível, necessária e inspiradora.</p><p class="person-name">PROFESSORA LUCIANA LUNGUINHO</p></div>
-
-          <div class="statement"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero impedit, tempore accusantium ab nostrum optio? Blanditiis odit dolorum minima, exercitationem ipsam harum in, molestias tempora totam, soluta iste laudantium dolore?</p><p class="person-name">NOME DA PESSOA</p></div>
-
-          <div class="statement"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero impedit, tempore accusantium ab nostrum optio? Blanditiis odit dolorum minima, exercitationem ipsam harum in, molestias tempora totam, soluta iste laudantium dolore?</p><p class="person-name">NOME DA PESSOA</p></div>
-
-          <div class="statement"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero impedit, tempore accusantium ab nostrum optio? Blanditiis odit dolorum minima, exercitationem ipsam harum in, molestias tempora totam, soluta iste laudantium dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab illum sunt. Culpa aliquid rerum nostrum consectetur officia voluptatum itaque officiis saepe, odio voluptate illo perspiciatis iste pariatur quidem suscipit.</p>
-          <p class="person-name">NOME DA PESSOA</p></div>
-
-        </div>
-      </div>
-      
-    </section>
-
-
-    <!--FRASE-->
-    <section class="phrase">
-      <h3>a força feminina é o código da mudança</h3>
-    </section>
-
-
-    <!--PARA ESTUDOS-->
-    <section class="studies container">
-      <div class="studies-container">
-        <div class="title-section">
-          <img src="assets/images/icon-para-estudos.png" alt="Ícone de código" />
-          <h2 class="for-studies">Para<br>estudos</h2>
-        </div>
-
-        <div class="recommendations">
-          <div class="item">
-            <img src="assets/images/icon-freecode.png" alt="">
-            <h4>Responsive Web Design</h4>
-            <p>You'll learn the languages that developers use to build webpages: HTML and CSS.</p>
-            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design" target="_blank" rel="noopener noreferrer">Acessar</a>
-          </div>
-
-          <div class="item">
-            <img src="assets/images/icon-cursoemvideo.png" alt="">
-            <h4>Curso em Vídeo</h4>
-            <p>Cursos gratuitos com foco em lógica, HTML, CSS e JavaScript.</p>
-            <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">Acessar</a>
-          </div>
-
-          <div class="item">
-            <img src="assets/images/icon-brocode.png" alt="">
-            <h4>Bro Code</h4>
-            <p>Tutoriais em vídeo sobre desenvolvimento web e linguagens modernas.</p>
-            <a href="https://www.youtube.com/@BroCodez" target="_blank" rel="noopener noreferrer">Acessar</a>
-          </div>
-
-          <div class="item">
-            <img src="assets/images/icon-beecrowd.png" alt="">
-            <h4>Beecrowd</h4>
-            <p>Plataforma de desafios para treinar lógica de programação.</p>
-            <a href="https://judge.beecrowd.com/pt/" target="_blank" rel="noopener noreferrer">Acessar</a>
-          </div>
-
-          <div class="item">
-            <img src="assets/images/icon-hashtag.png" alt="">
-            <h4>Hashtag Treinamentos</h4>
-            <p>Cursos focados em programação para iniciantes e Excel.</p>
-            <a href="https://www.hashtagtreinamentos.com/" target="_blank" rel="noopener noreferrer">Acessar</a>
-          </div>
-
-          <div class="item">
-            <img src="assets/images/icon-rocketseat.png" alt="">
-            <h4>Rocketseat</h4>
-            <p>Comece a programar do zero com conteúdos gratuitos e práticos.</p>
-            <a href="https://www.rocketseat.com.br/" target="_blank" rel="noopener noreferrer">Acessar</a>
-          </div>
-        </div>
-    </section>
-
-
-    <!--SOBRE O PROJETO E PESQUISA-->
-
-    <section class="about-project">
-      <div class="about-project-container container">
-        <div class="image-project">
-          <h2>Sobre o projeto</h2>
-          <img src="assets/images/image-research.png" alt="" class="img-proj">
-        </div>
-        <div class="text-project">
-          <p> Apesar dos avanços na inclusão feminina na área de tecnologia, muitas mulheres ainda enfrentam barreiras
-            que as levam a desistir de seus cursos ou carreiras na área de TI. A evasão feminina é um problema complexo,
-            influenciado por diversos fatores como estereótipos de gênero, falta de representatividade, ausência de
-            redes de apoio e questões psicossociais — como a síndrome do impostor e o sentimento de não pertencimento.
-            Diante desse cenário, nasceu o projeto Mulher TECH: uma iniciativa voltada ao acolhimento, à
-            representatividade e ao fortalecimento das trajetórias femininas na tecnologia.
-          </p>
-        </div>
-        <div class="research">
-          <h4>participe<br>da<br>nossa<br>pesquisa</h4>
-          <a href="https://docs.google.com/forms/d/1MfHdyDdNrGdIguSM3bwYK0WzccqkLqNAcpxQrzu2t0o/edit" target="_blank">clique aqui</a>
-        </div>
-      </div>
-    </section>
-
-    <!--LINHA DO TEMPO-->
-
-    <section class="time-line container">
-      <div class="time-line-title">
-        <h2>Linha do tempo do projeto</h2>
-      </div>
-      <div class="time-line-info">
-        <div class="line-01">
-          <div class="time-line-topics">
-            <div class="time-line-detail">01</div>
-            <div class="time-line-text">
-              <h4>Desafio Unifacisa: Entendendo a Evasão</h4>
-              <p class="time-line-topic-info">Início do projeto em parceria com a Accenture, investigando os motivos da
-                evasão feminina na tecnologia, com foco em diversidade, inclusão e fatores psicossociais.</p>
-            </div>
-          </div>
-          <div class="time-line-topics">
-            <div class="time-line-detail">02</div>
-            <div class="time-line-text">
-              <h4>Pesquisa Quantitativa</h4>
-              <p class="time-line-topic-info">Aplicação de formulário para mapear vivências de mulheres na TI, revelando desafios como isolamento, falta de apoio e baixa representatividade.</p>
-            </div>
-          </div>
-          
-          <div class="time-line-topics">
-            <div class="time-line-detail">03</div>
-            <div class="time-line-text">
-              <h4>Ideação e Prototipagem</h4>
-              <p class="time-line-topic-info">Criação do protótipo de uma plataforma de apoio, com funcionalidades como formulário contínuo, podcast, depoimentos, eventos e mentoria.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="line-02">
-
-          <div class="time-line-topics">
-            <div class="time-line-detail">04</div>
-            <div class="time-line-text">
-              <h4>Desenvolvimento e Conteúdo</h4>
-              <p class="time-line-topic-info">Produção dos conteúdos do site, com destaque para figuras femininas da tecnologia e ações de fortalecimento do pertencimento.</p>
-            </div>
-          </div>
-
-          <div class="time-line-topics">
-            <div class="time-line-detail">05</div>
-            <div class="time-line-text">
-              <h4>Engajamento e Ações de Suporte</h4>
-              <p class="time-line-topic-info">Criação de um espaço para divulgação de eventos, workshops e iniciativas que estejam por acontecer ou em andamento, incentivando o engajamento e a participação ativa das mulheres na área de tecnologia.</p>
-            </div>
-          </div>
-
-          <div class="time-line-topics">
-            <div class="time-line-detail">06</div>
-            <div class="time-line-text">
-              <h4>Entrega Final e Proposta de Impacto</h4>
-              <p class="time-line-topic-info">Apresentação do projeto como uma solução concreta e escalável para impulsionar a representatividade feminina na tecnologia..</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--QUEM SOMOS-->
-    <section class="us">
-      <div class="us-container container">
-        <img src="assets/images/image-us.png" alt="">
-        <div class="text-us">
-          <h2>Quem somos</h2>
-          <p>Somos sete mulheres - Ana Luisa, Carolina, Larissa, Maria Eduarda, Mônica, Nayara e Sabrina - estudantes do
-            curso de <strong>Sistemas de Informação da Unifacisa</strong>, em diferentes períodos. Estamos unidas pelo Projeto Integrador
-            e pelo Desafio Unifacisa, com o objetivo de mapear e entender as causas da evasão feminina na área de
-            tecnologia, especialmente na nossa faculdade. Nosso propósito é transformar esse cenário e incentivar mais
-            mulheres a ingressarem e permanecerem na área de TI.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer id="footer"></footer>
-  <script src="assets/script.js"></script>
-</body>
-
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
