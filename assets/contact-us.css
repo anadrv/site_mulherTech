@@ -36,7 +36,7 @@ main {
   padding: 0 0 70px 70px;
   border-radius: 0 5px 5px 0;
   margin-top: 100px;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .contact-us__title {
@@ -76,7 +76,6 @@ main {
   align-items: center;
   padding-right: 10%;
 }
-
 
 @media (max-width: 600px) {
   .contact-us {
