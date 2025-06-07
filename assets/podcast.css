@@ -45,11 +45,8 @@
   color: white;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  height: 530px; 
-  overflow: hidden;
-  text-align: justify;
+  height: 550px;
+
 }
 
 .podcast__card:hover {
@@ -63,13 +60,8 @@
 }
 
 .podcast__card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  overflow: hidden;
-  text-align: justify;
+    padding: 20px;
+    text-align: justify;
 }
 
 .podcast__card-title {
@@ -80,7 +72,6 @@
 
 .podcast__card-description {
         font-size: 0.9rem;
-        text-align: justify;
 }
 
 .podcast__card-links {
