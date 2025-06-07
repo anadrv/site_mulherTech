@@ -31,13 +31,11 @@
 .podcast__cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center; 
-  gap: 20px; 
+  align-items: stretch; /* importante para forçar altura igual */
+  justify-content: center;
+  gap: 20px;
   padding: 30px;
-  transition: transform 0.3s ease;
 }
-
 
 .podcast__card {
   display: flex;
@@ -49,8 +47,16 @@
   transition: transform 0.3s ease;
   align-items: stretch;
   text-align: justify;
-  height: 550px;
+  /* REMOVA height fixo */
+}
 
+.podcast__card-content {
+  padding: 20px;
+  text-align: justify;
+  flex-grow: 1; /* faz o conteúdo expandir */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribuir conteúdo */
 }
 
 .podcast__card:hover {
@@ -63,10 +69,7 @@
   border-radius: 1px 10px 0px 0px;
 }
 
-.podcast__card-content {
-    padding: 20px;
-    text-align: justify;
-}
+
 
 .podcast__card-title {
     padding-bottom: 20px;
