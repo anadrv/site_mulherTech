@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("mostrar");
 
-  // Carregar header
+  //HEADER
   fetch('/site_mulherTech/pages/header.html')
     .then(response => response.text())
     .then(data => {
@@ -10,13 +10,12 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Erro ao carregar o header:', error));
 
-  // Carregar menu mobile
+  //MENU MOBILE
   fetch('/site_mulherTech/pages/mobile-nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('mobile-nav-placeholder').innerHTML = data;
 
-      // Toggle do menu mobile
       const toggle = document.querySelector('.menu-toggle');
       const menu = document.querySelector('.mobile-menu');
 
@@ -28,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Erro ao carregar o menu mobile:', error));
 
-  // Carregar footer
+  //FOOTER
   fetch('/site_mulherTech/pages/footer.html')
     .then(response => response.text())
     .then(data => {
@@ -36,7 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Erro ao carregar o footer:', error));
 
-  // Carrossel de eventos
+  //CARROSEL DE EVENTOS
   const events = [
     {
       date: "06",
@@ -50,13 +49,6 @@ window.addEventListener("DOMContentLoaded", () => {
       month: "maio",
       title: "Workshop Java",
       desc: "Workshop prático sobre Java e programação orientada a objetos.",
-      img: "assets/images/podcast.jpg"
-    },
-    {
-      date: "30",
-      month: "junho",
-      title: "Papo Tech",
-      desc: "Bate-papo com profissionais da área sobre carreira e tecnologia.",
       img: "assets/images/podcast.jpg"
     }
   ];
