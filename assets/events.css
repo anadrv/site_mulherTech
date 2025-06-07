@@ -94,6 +94,10 @@
   justify-content: space-between;
 }
 
+.saber-mais {
+  align-self: flex-end;
+}
+
 .all-events-info .date {
   font-weight: bold;
   color: var(--primary-color);
